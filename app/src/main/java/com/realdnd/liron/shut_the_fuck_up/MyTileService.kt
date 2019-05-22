@@ -7,23 +7,7 @@ import android.util.Log
 import android.media.AudioManager
 import android.app.NotificationManager
 
-
-
-
-
-
 class MyTileService: TileService() {
-    fun setVolume(volume: Int) {
-        Log.d("setting_volume", volume.toString())
-
-        val audioManager: AudioManager = this.applicationContext.getSystemService(AUDIO_SERVICE) as AudioManager
-        audioManager.setStreamVolume(AudioManager.STREAM_MUSIC, volume, 0);
-        audioManager.setRingerMode(AudioManager.RINGER_MODE_SILENT);
-        val maxVolume = audioManager.getStreamMinVolume(AudioManager.STREAM_RING)
-        audioManager.setStreamVolume(AudioManager.STREAM_RING, maxVolume, AudioManager.FLAG_SHOW_UI + AudioManager.FLAG_PLAY_SOUND);
-
-    }
-
     fun unmute() {
         val audio = getSystemService(Context.AUDIO_SERVICE) as AudioManager
         audio.adjustStreamVolume(AudioManager.STREAM_NOTIFICATION, AudioManager.ADJUST_UNMUTE, AudioManager.FLAG_SHOW_UI)
@@ -65,11 +49,7 @@ class MyTileService: TileService() {
 
     override fun onTileAdded() {
         super.onTileAdded()
-
-        // Update state
         qsTile.state = Tile.STATE_INACTIVE
-
-        // Update looks
         qsTile.updateTile()
     }
 
@@ -77,23 +57,13 @@ class MyTileService: TileService() {
         super.onClick()
         Log.d("tagged", "clicked")
         if(qsTile.state == Tile.STATE_INACTIVE) {
-            // Turn on
             qsTile.state = Tile.STATE_ACTIVE
-
-//            Log.d("mute", "enabled")
             mute()
-//            printVolumes()
         } else {
             unmute()
-            // Turn off
             qsTile.state = Tile.STATE_INACTIVE
-
-//            Log.d("mute", "disabled")
             unmute()
-//            printVolumes()
         }
-
-        // Update looks
         qsTile.updateTile()
     }
 }
