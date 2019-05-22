@@ -5,7 +5,7 @@ The issue that made me build this app was that I use whatsapp as my main way to 
 
 It seems that this issue is not my own ([1],[2],[3]) so I open source this, so people can use it themselves.
 
-The app creates a quick custom setting to make it easier to use (the paw icon in the screen shot 🐾 ), as you an see, google pixel even notifies the we are in a "Total Silence" mode.
+The app creates a quick custom setting to make it easier to use (the paw icon in the screen shot 🐾 ), as you an see, google pixel even notifies the we are in a "Total Silence" mode - it does require a permission to set DND mode.
 
 ![Screen shot](https://i.imgur.com/xywHvTW.png)
 
