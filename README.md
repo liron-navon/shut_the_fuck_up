@@ -13,6 +13,10 @@ The app creates a quick custom setting to make it easier to use (the paw icon in
 
 [](https://imgur.com/xywHvTW)
 
+## How to use a quick menu app
+You can check it here: [how to use]
+
 [1]: https://forums.oneplus.com/threads/whatsapp-calls-in-do-not-disturb-mode.814689
 [2]: https://discussions.apple.com/thread/7952191
 [3]: https://forum.xda-developers.com/s7-edge/help/question-whatsapp-overriding-disturb-t3596944
+[how to use]: https://www.lifewire.com/quick-settings-menu-android-4121299
