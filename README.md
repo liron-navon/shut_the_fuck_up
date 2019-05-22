@@ -1,9 +1,11 @@
 # Shut the fuck up
 An android app to hermetically mute the phone.
 
-The issue that made me build this app was that I use whatsapp as my main way to make calls (voip), but whatsapp doesn't respect the "do not disturb" and it accurs to me that applications don't have to respect it - this app just mutes the phone in and way possible, it activates DND and mutes all audio streams.
+The issue that made me build this app was that I use whatsapp as my main way to make calls (voip), but Whatsapp doesn't respect the "do not disturb" and it accurs to me that others applications don't have to respect it - this app just mutes the phone in any way possible, it activates DND and mutes all audio streams.
 
-It seems that this issue is not my own ([1],[2],[3]) so I open source this, so people can use it themselves.
+** it is important to mention the whats app only ignores DND for Voip calls, but does respect it when it comes to regular messages🤷‍♂️.
+
+It seems that this issue is not my own ([1],[2],[3]) so I open source this, so people can use it themselves 😁, it does contain only 1 service (creates the mute icon) and 1 activity (gives permissions), so it is very simple to understand.
 
 The app creates a quick custom setting to make it easier to use (the paw icon in the screen shot 🐾 ), as you an see, google pixel even notifies the we are in a "Total Silence" mode - it does require a permission to set DND mode.
 
